@@ -26,6 +26,10 @@ const SectionSchema = new mongoose.Schema({
     type: Boolean, 
     default: true 
   },
+  showInNav: { 
+    type: Boolean, 
+    default: true 
+  },
   order: { 
     type: Number, 
     default: 0 

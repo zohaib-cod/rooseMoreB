@@ -8,13 +8,13 @@ cloudinary.config({
 });
 
 const DEFAULT_SECTIONS = [
-  { name: "Bouquets", slug: "bouquets", showOnHome: true, order: 1, description: "Bespoke hand-tied floral bouquets." },
-  { name: "Room Decor", slug: "room-decor", showOnHome: true, order: 2, description: "Romantic & aesthetic room transformations." },
-  { name: "Car Decor", slug: "car-decor", showOnHome: true, order: 3, description: "Elegant wedding car floral adornments." },
-  { name: "Zewar Sett", slug: "zewar-sett", showOnHome: true, order: 4, description: "Handcrafted fresh floral jewelry sets." },
-  { name: "Party Decor", slug: "party-decor", showOnHome: true, order: 5, description: "Custom event styling and backdrops." },
-  { name: "Artificial", slug: "artificial", showOnHome: true, order: 6, description: "Everlasting premium silk flowers." },
-  { name: "Decor Accessories", slug: "decor-accessories", showOnHome: true, order: 7, description: "Poppers, candles, and cake cutting sets." }
+  { name: "Bouquets", slug: "bouquets", showOnHome: true, showInNav: true, order: 1, description: "Bespoke hand-tied floral bouquets." },
+  { name: "Room Decor", slug: "room-decor", showOnHome: true, showInNav: true, order: 2, description: "Romantic & aesthetic room transformations." },
+  { name: "Car Decor", slug: "car-decor", showOnHome: true, showInNav: true, order: 3, description: "Elegant wedding car floral adornments." },
+  { name: "Zewar Sett", slug: "zewar-sett", showOnHome: true, showInNav: true, order: 4, description: "Handcrafted fresh floral jewelry sets." },
+  { name: "Party Decor", slug: "party-decor", showOnHome: true, showInNav: true, order: 5, description: "Custom event styling and backdrops." },
+  { name: "Artificial", slug: "artificial", showOnHome: true, showInNav: true, order: 6, description: "Everlasting premium silk flowers." },
+  { name: "Decor Accessories", slug: "decor-accessories", showOnHome: true, showInNav: true, order: 7, description: "Poppers, candles, and cake cutting sets." }
 ];
 
 const generateSlug = (name) => {
