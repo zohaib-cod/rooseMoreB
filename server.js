@@ -7,6 +7,10 @@ const productRoutes = require('./routes/productRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 const sectionRoutes = require('./routes/sectionRoutes');
 const heroRoutes = require('./routes/heroRoutes');
+const showcaseRoutes = require('./routes/showcaseRoutes');
+const serviceRoutes = require('./routes/serviceRoutes');
+const aboutRoutes = require('./routes/aboutRoutes');
+const footerRoutes = require('./routes/footerRoutes');
 
 const app = express();
 
@@ -37,6 +41,10 @@ app.use('/api/products', productRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/sections', sectionRoutes);
 app.use('/api/hero', heroRoutes);
+app.use('/api/showcase', showcaseRoutes);
+app.use('/api/services', serviceRoutes);
+app.use('/api/about', aboutRoutes);
+app.use('/api/footer', footerRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
