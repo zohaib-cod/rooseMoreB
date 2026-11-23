@@ -6,6 +6,7 @@ const connectDB = require('./config/db');
 const productRoutes = require('./routes/productRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 const sectionRoutes = require('./routes/sectionRoutes');
+const heroRoutes = require('./routes/heroRoutes');
 
 const app = express();
 
@@ -35,6 +36,7 @@ app.get('/', (req, res) => {
 app.use('/api/products', productRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/sections', sectionRoutes);
+app.use('/api/hero', heroRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
